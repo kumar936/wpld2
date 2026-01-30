@@ -6,10 +6,11 @@ services:
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
+    startCommand: "python api_server.py"
     envVars:
       - key: FLASK_ENV
         value: production
       - key: PORT
         value: 5000
+
 
